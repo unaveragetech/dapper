@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dapper · Style that learns you</title>
+<meta name="description" content="Dapper is an Android wardrobe app that learns your style from the clothes you actually own, builds outfits that make sense, and shows them on your own photo, privately, on your phone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top"><span class="mark">D</span>Dapper</a>
+  <nav>
+    <a href="#today">Today</a>
+    <a href="#tour">The app</a>
+    <a href="#how">How it works</a>
+    <a href="#tryon">Try-on</a>
+    <a href="#glance">vs Glance AI</a>
+    <a href="#next">What's next</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ============================================================ HERO -->
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Android · in active development · v0.3</p>
+    <h1>Your wardrobe, finally <em>thinking with you.</em></h1>
+    <p class="lede">Most style apps want to sell you something new. Dapper starts with what's already in your closet. It learns the colours you reach for, the combinations you love and the ones you never wear, then builds outfits that actually make sense for your day and shows them on <strong>your own photo</strong>. Privately, on your phone.</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="#tour">See the app</a>
+      <a class="btn ghost" href="#glance">How it compares</a>
+    </div>
+    <ul class="hero-facts">
+      <li><b>12</b> screens built</li>
+      <li><b>124</b> automated tests</li>
+      <li><b>0</b> photos uploaded by default</li>
+    </ul>
+  </div>
+  <div class="hero-phones">
+    <figure class="phone tilt-l"><img src="img/19_tryon_fit.webp" alt="Try-on mirror showing a quick fit preview of a navy tee and jeans on the user's photo"><figcaption>Instant fit preview</figcaption></figure>
+    <figure class="phone tilt-r"><img src="img/20_tryon_enhanced.webp" alt="The same outfit after the realism pass: fabric folds and lighting look natural, face untouched"><figcaption>After the realism pass</figcaption></figure>
+  </div>
+</section>
+
+<!-- ============================================================ BIG IDEA -->
+<section class="band idea">
+  <div class="wrap narrow">
+    <h2>The next step in style preferences</h2>
+    <p>Recommendation apps usually guess your taste from what you <em>browse</em>. That tells them what you'd click on, not what you'd wear. Dapper learns from what you <em>own</em> and what you <em>do</em> with it: the outfits you save, the ones you actually wear, and the ones you reject.</p>
+    <p>And it learns carefully. Turning down an outfit doesn't mean you hate every piece in it. Usually it's the <em>combination</em> that's off. So Dapper remembers combinations separately from individual garments, keeps what you told it apart from what it inferred, and never turns one passing chat comment into a permanent rule. Over time your style profile becomes a real picture of you, built from your own choices rather than an ad funnel.</p>
+    <div class="pillars">
+      <div><span>👕</span><h3>Wardrobe-first</h3><p>Every suggestion uses clothes you own. Nothing to buy unless you go looking.</p></div>
+      <div><span>🧠</span><h3>Learns honestly</h3><p>Explicit likes, learned habits and "not sure" are kept separate. Unknown stays unknown.</p></div>
+      <div><span>🪞</span><h3>Looks like you</h3><p>Try-on works on your own photo. Your face and hair are never redrawn.</p></div>
+      <div><span>🔒</span><h3>Private by default</h3><p>Recognition and try-on run on the phone. Every optional feature starts switched off.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ STATUS -->
+<section id="today" class="wrap">
+  <h2>Where we are today</h2>
+  <p class="sub">An honest status board. Green means it works and is covered by tests; amber means it works but we know it needs more; grey means it's planned.</p>
+  <div class="status-grid">
+    <article class="st ok"><h3>Snap-to-wardrobe scanning</h3><p>Photograph several clothes at once. Google's on-device ML Kit finds each item, crops it, suggests a type and reads its colours. You confirm in one tap.</p></article>
+    <article class="st ok"><h3>Outfit engine</h3><p>Builds outfits from your own clothes, scored on colour harmony, formality, silhouette, pattern, occasion, season and your preferences. Explains every pick. Works with no AI service at all.</p></article>
+    <article class="st ok"><h3>Stylist chat</h3><p>"Smart casual using my brown boots." "Keep the shirt, make the rest lighter." It understands, keeps what you asked it to keep, and shows the options.</p></article>
+    <article class="st ok"><h3>Planner &amp; travel packing</h3><p>Plan a week without repeating pieces, add events, or pack for a trip with the fewest items that make the most outfits.</p></article>
+    <article class="st ok"><h3>Insights</h3><p>What you wear most, what you never wear, gaps in your wardrobe and your most versatile pieces.</p></article>
+    <article class="st ok"><h3>Privacy controls</h3><p>Per-purpose consent switches (all off by default), photos kept on the phone, one-tap delete of everything.</p></article>
+    <article class="st warn"><h3>Try-on mirror</h3><p>Puts tops, layers and jackets on your photo, shaped to your body. Dresses, trousers and shoes are placed more roughly. The instant preview is approximate; the realism pass fixes most of that.</p></article>
+    <article class="st warn"><h3>On-phone realism engine</h3><p>The app speaks the Local Dream engine's protocol and works end to end against a desktop stand-in. Running the real engine on a phone is next (it needs a physical arm64 device).</p></article>
+    <article class="st warn"><h3>Offline mode</h3><p>Opens instantly from your last sync with a clear banner. Edits still need a connection.</p></article>
+    <article class="st plan"><h3>Smart reminders</h3><p>"Tomorrow's outfit" and laundry nudges.</p></article>
+    <article class="st plan"><h3>Calendar &amp; dress codes</h3><p>Read an invite, suggest the right level of dressy.</p></article>
+    <article class="st plan"><h3>iOS</h3><p>The backend is ready for it; the app is Android-only for now.</p></article>
+  </div>
+</section>
+
+<!-- ============================================================ TOUR -->
+<section id="tour" class="band tour">
+  <div class="wrap">
+    <h2>A walk through the app</h2>
+    <p class="sub">Every screenshot below is from the real Android build, captured on an emulator. Tap any screen to look closer. The people and clothes are synthetic images we generated for testing, not real people.</p>
+
+    <div class="chapter">
+      <div class="chapter-text">
+        <span class="step">01</span>
+        <h3>A friendly start</h3>
+        <p>Sign up, and a short tour explains the four ideas that matter: scan instead of typing, confirm what the app guessed, zoom in on anything, and keep control of your data. You can replay it from your profile whenever you like.</p>
+      </div>
+      <div class="shots">
+        <img src="img/01_signin.webp" alt="Sign-in screen">
+        <img src="img/02_tour_welcome.webp" alt="Tour: welcome">
+        <img src="img/03_tour_scan.webp" alt="Tour: scan, don't type">
+      </div>
+    </div>
+
+    <div class="chapter rev">
+      <div class="chapter-text">
+        <span class="step">02</span>
+        <h3>Home that knows what to do next</h3>
+        <p>A setup checklist shows exactly what's left to get started. Below it, <b>Today's pick</b> is an outfit already put together from your clothes, tuned to the weather. One tap says "I'm wearing this", and Dapper remembers.</p>
+      </div>
+      <div class="shots">
+        <img src="img/04_home.webp" alt="Home with setup checklist">
+        <img src="img/05_home_pick.webp" alt="Today's pick outfit card">
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-text">
+        <span class="step">03</span>
+        <h3>Getting clothes in, fast</h3>
+        <p>Lay a few things on the bed and take one photo, or pick up to twenty from your gallery. Each item is found and cut out on the phone. When the app is confident it says so ("looks like leggings, 80% sure"). When it isn't, it asks instead of pretending, and offers a one-tap "maybe jeans?" hint.</p>
+      </div>
+      <div class="shots">
+        <img src="img/14_add_menu.webp" alt="Add clothes menu">
+        <img src="img/15_scan_review.webp" alt="Scan review: leggings recognised with 80% confidence">
+        <img src="img/16_scan_multi.webp" alt="Scan review: several items detected from one flat-lay photo">
+      </div>
+    </div>
+
+    <div class="chapter rev">
+      <div class="chapter-text">
+        <span class="step">04</span>
+        <h3>A wardrobe you can actually browse</h3>
+        <p>A clean grid with filters for things that need review, favourites, laundry and each category. Long-press to select several and confirm, wash or remove them together (with Undo). Open any piece to edit it, or pinch-zoom right into the fabric.</p>
+      </div>
+      <div class="shots">
+        <img src="img/06_wardrobe.webp" alt="Wardrobe grid">
+        <img src="img/07_garment_detail.webp" alt="Garment detail">
+        <img src="img/08_zoom.webp" alt="Pinch-zoom into a garment">
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-text">
+        <span class="step">05</span>
+        <h3>Outfits, explained</h3>
+        <p>Pick an occasion and swipe through options. Every outfit comes with a score and the reasons behind it, in plain words. Or just tell the stylist what you need, then refine: it keeps what you asked to keep and changes the rest.</p>
+      </div>
+      <div class="shots">
+        <img src="img/09_studio.webp" alt="Style Studio">
+        <img src="img/10_studio_outfit.webp" alt="An outfit with its score and explanation">
+        <img src="img/11_stylist.webp" alt="Stylist chat">
+      </div>
+    </div>
+
+    <div class="chapter rev">
+      <div class="chapter-text">
+        <span class="step">06</span>
+        <h3>Plan the week, know your wardrobe</h3>
+        <p>Choose an occasion for each day and Dapper plans the week without repeating pieces. Insights show what you wear, what you've forgotten, and where the gaps are, so the next thing you buy actually earns its place.</p>
+      </div>
+      <div class="shots">
+        <img src="img/12_planner.webp" alt="Weekly planner">
+        <img src="img/13_insights.webp" alt="Wardrobe insights">
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-text">
+        <span class="step">07</span>
+        <h3>See it on you</h3>
+        <p>Add one full-body photo and put on anything from your wardrobe or the sample catalog. The quick preview is instant and runs entirely on the phone. "Enhance realism" then adds believable folds and lighting, without touching your face or hair. Compare before and after, zoom in, or share the look.</p>
+      </div>
+      <div class="shots">
+        <img src="img/17_catalog.webp" alt="Catalog">
+        <img src="img/18_catalog_item.webp" alt="Catalog item: add and try on">
+        <img src="img/19_tryon_fit.webp" alt="Try-on fit preview">
+        <img src="img/20_tryon_enhanced.webp" alt="Try-on enhanced">
+      </div>
+    </div>
+
+    <div class="chapter rev">
+      <div class="chapter-text">
+        <span class="step">08</span>
+        <h3>Your profile, your rules</h3>
+        <p>Set colours you love and colours you'll never wear. Every optional permission has its own switch, all off until you choose otherwise. Delete everything in one tap, and it's really gone.</p>
+      </div>
+      <div class="shots">
+        <img src="img/21_profile.webp" alt="Profile and style preferences">
+        <img src="img/22_privacy.webp" alt="Privacy and the realism engine settings">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ HOW -->
+<section id="how" class="wrap">
+  <h2>How it works</h2>
+  <p class="sub">Three engines, each doing one job well, instead of one giant AI that's confidently wrong.</p>
+
+  <div class="flow">
+    <h3>1 · From photo to wardrobe</h3>
+    <ol class="pipe">
+      <li><b>Photo</b><span>one shot, many items</span></li>
+      <li><b>Find</b><span>ML Kit object detection crops each item</span></li>
+      <li><b>Name</b><span>image labels mapped to clothing types</span></li>
+      <li><b>Colour</b><span>real colour science (CIELAB), not guesswork</span></li>
+      <li><b>You confirm</b><span>"Needs review" until you say so</span></li>
+    </ol>
+    <p>All of this happens on your phone. Duplicates are caught when you upload ("you already have this one"), and anything the app isn't sure about is marked unknown rather than invented.</p>
+  </div>
+
+  <div class="flow">
+    <h3>2 · The outfit engine</h3>
+    <div class="engine">
+      <div class="gate"><b>Hard rules first</b><p>Unavailable, excluded or doubled-up items are never suggested. A dress doesn't need trousers. An athletic outfit needs proper shoes.</p></div>
+      <div class="scores">
+        <b>Then a balanced score</b>
+        <div class="bar"><span style="--w:20%">Colour 20%</span></div>
+        <div class="bar"><span style="--w:20%">Formality 20%</span></div>
+        <div class="bar"><span style="--w:15%">Silhouette 15%</span></div>
+        <div class="bar"><span style="--w:15%">Occasion 15%</span></div>
+        <div class="bar"><span style="--w:10%">Pattern 10%</span></div>
+        <div class="bar"><span style="--w:10%">Season 10%</span></div>
+        <div class="bar"><span style="--w:10%">Your taste 10%</span></div>
+      </div>
+      <div class="gate"><b>Then variety</b><p>The top five aren't five versions of the same thing. Each pick comes with plain-language reasons taken straight from the scores.</p></div>
+    </div>
+  </div>
+
+  <div class="flow">
+    <h3>3 · Try-on, in layers</h3>
+    <div class="tiers">
+      <div class="tier"><span class="tag">Tier A · on the phone · ~0.3 s</span><h4>Fit</h4><p>Google MediaPipe finds 33 body landmarks and which pixels are hair, skin, face and clothing. Garments are shaped to your body (sleeves along your real arms, the torso tapered from shoulder to hip) and layered by type.</p></div>
+      <div class="tier"><span class="tag">Tier B · optional · a few seconds</span><h4>Realism</h4><p>Each garment is cut into a square tile, regenerated by a Stable Diffusion model <em>only inside the garment</em>, and blended back. Your face and hair are masked out, so they're always your own pixels.</p></div>
+      <div class="tier dim"><span class="tag">Tier C · planned</span><h4>True try-on model</h4><p>Reserved for a dedicated try-on model with a licence that allows shipping. Today's best ones are research-only.</p></div>
+    </div>
+    <p class="note">Measured on our test photos: <b>97 to 100%</b> of face and hair pixels are unchanged after the fit, and the realism pass changes <b>none</b> of them.</p>
+  </div>
+
+  <div class="stack">
+    <div><b>Android app</b><p>Kotlin · Jetpack Compose · ML Kit · MediaPipe Tasks · OkHttp</p></div>
+    <div><b>Backend</b><p>Python · FastAPI · SQLAlchemy · Pillow · OpenCV</p></div>
+    <div><b>Image engine</b><p>Stable Diffusion 1.5 few-step (Dreamshaper-8 + Hyper-SD) via the Local Dream protocol</p></div>
+    <div><b>Quality</b><p>76 backend tests · 48 Android tests · Kotlin maths checked against the Python reference</p></div>
+  </div>
+</section>
+
+<!-- ============================================================ TRYON -->
+<section id="tryon" class="band dark">
+  <div class="wrap">
+    <h2>Try-on: the journey so far</h2>
+    <p class="sub">We'd rather show you the honest progression than a single cherry-picked image.</p>
+
+    <figure class="wide">
+      <img src="img/tryon_v1_rigid.webp" alt="First version: garments pasted as rigid blocks">
+      <figcaption><b>Version 1.</b> The first attempt pasted the product photo as a rigid block. Sleeves stuck out, shoulders were square, trousers were too wide. It looked like a sticker, and we said so.</figcaption>
+    </figure>
+    <figure class="wide">
+      <img src="img/tryon_fit_sheet.webp" alt="Body-conforming fit across five outfits">
+      <figcaption><b>Version 2, fit only.</b> Garments now take the body's shape. Tops follow the arms and taper to the waist, hair stays in front of the collar, and old sleeves are cleaned away.</figcaption>
+    </figure>
+    <figure class="wide">
+      <img src="img/tryon_enh_sheet.webp" alt="Enhanced results across five outfits">
+      <figcaption><b>Version 2, with the realism pass.</b> Folds, shading and fabric texture. The face is pixel-for-pixel the original photo.</figcaption>
+    </figure>
+    <div class="duo">
+      <figure><img src="img/tryon_enh_sheet_man.webp" alt="Enhanced try-on on a second person"><figcaption>Different body, same outfits.</figcaption></figure>
+      <figure><img src="img/tryon_enh_sheet_elder.webp" alt="Enhanced try-on on a third person"><figcaption>Built for every age and body, not one template.</figcaption></figure>
+    </div>
+    <p class="caveat">Still rough: shoes can look small or doubled, trousers and dresses are placed rather than shaped, and removing old trousers can leave a flat panel between the legs until the realism pass. It's a visual aid. It won't tell you whether something fits.</p>
+  </div>
+</section>
+
+<!-- ============================================================ GLANCE -->
+<section id="glance" class="wrap">
+  <h2>Dapper and Glance AI</h2>
+  <p class="sub">Glance AI is the best-known app in this space, and it's genuinely impressive. It turns one selfie into a daily stream of AI-generated photos of you in new outfits, tuned to things like the weather, and lets you shop similar looks from hundreds of brands, even from a Samsung lock screen. It's polished, fast and huge: Glance says its beta produced over 40 million looks for 1.5 million people.</p>
+
+  <div class="versus">
+    <div class="vs-card glance">
+      <h3>Glance AI asks</h3>
+      <p class="q">"What could you buy that would look great on you?"</p>
+      <ul>
+        <li>Generates a new picture of you in outfits</li>
+        <li>Outfits come from brand catalogues</li>
+        <li>The goal is discovery and shopping</li>
+        <li>Built from a selfie and your details</li>
+        <li>Image generation happens in the cloud</li>
+      </ul>
+    </div>
+    <div class="vs-card dapper">
+      <h3>Dapper asks</h3>
+      <p class="q">"What should you wear today, from what you already own, and what does that say about your style?"</p>
+      <ul>
+        <li>Puts real garments on your real photo</li>
+        <li>Outfits come from your own wardrobe</li>
+        <li>The goal is wearing more of what you have</li>
+        <li>Learns from what you wear, save and reject</li>
+        <li>Recognition and try-on run on your phone</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+  <table class="compare">
+    <thead><tr><th></th><th>Glance AI</th><th>Dapper</th></tr></thead>
+    <tbody>
+      <tr><td>Starting point</td><td>A selfie plus age, body type and gender</td><td>Your clothes, scanned in a few photos</td></tr>
+      <tr><td>What you see</td><td>AI-generated images of you in new looks</td><td>Your own photo with your own garments on it</td></tr>
+      <tr><td>Where outfits come from</td><td>Brand catalogues (400+ brands reported)</td><td>Your wardrobe, plus an optional sample catalog</td></tr>
+      <tr><td>How it learns your taste</td><td>Interactions, location and device signals</td><td>What you actually wear, save and reject, with combinations tracked separately from items</td></tr>
+      <tr><td>Explains its picks</td><td>Editorial collections</td><td>A score and plain reasons for every outfit</td></tr>
+      <tr><td>Daily planning</td><td>Weather-aware looks</td><td>Weather, weekly planner, travel packing, laundry</td></tr>
+      <tr><td>Wardrobe insights</td><td>Not its focus</td><td>Most worn, never worn, gaps, most versatile</td></tr>
+      <tr><td>Privacy</td><td>Cloud generation from your selfie</td><td>On-device by default; every optional feature off until you allow it</td></tr>
+      <tr><td>Maturity</td><td>Launched at scale, iOS and Android</td><td>Early, Android-only, in active development</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="why">
+    <h3>Why we think this is the next step</h3>
+    <p>Generating a flattering picture of you is the easy half of the problem, and it mostly ends in a shopping cart. The harder, more useful half is understanding <em>your</em> style well enough to dress you from the closet you already have. That's a richer signal: it's what you chose to own, what you keep reaching for, and what you quietly avoid. Dapper treats that signal with care. It explains itself, admits when it's unsure, and keeps the result yours.</p>
+    <p>We're not pretending to be further along than we are. Glance AI is a finished product used by millions; Dapper is an early build. But the direction is different on purpose: <strong>from "show me something new" to "know me, and help me wear what I have, better."</strong></p>
+  </div>
+  <p class="sources">Sources on Glance AI: <a href="https://apps.apple.com/app/id6742974181">App Store listing</a> · <a href="https://www.digitalcommerce360.com/2025/06/04/samsung-glance-launch-ai-shopping-tool/">Digital Commerce 360</a> · <a href="https://www.androidcentral.com/apps-software/glance-ai-allows-to-shop-fashion-via-personalized-ai-generated-lock-screen-visuals">Android Central</a> · <a href="https://www.aol.com/ai-finally-fix-online-shopping-004714488.html">hands-on test</a>. Figures are as reported by those sources.</p>
+</section>
+
+<!-- ============================================================ NEXT -->
+<section id="next" class="band">
+  <div class="wrap">
+    <h2>What's still in development</h2>
+    <div class="roadmap">
+      <div class="lane"><h3>Now</h3>
+        <ul>
+          <li>Run the realism engine on a real Android phone (it's arm64-only, so it can't run in our emulator)</li>
+          <li>Better shoes, and trousers shaped leg by leg</li>
+          <li>A cleaner instant preview: smooth sleeve edges, no flat panel between the legs</li>
+          <li>Fix: the tour's Skip button sits under the status bar</li>
+        </ul>
+      </div>
+      <div class="lane"><h3>Next</h3>
+        <ul>
+          <li>Offline edits that sync later</li>
+          <li>Tomorrow's-outfit and laundry reminders</li>
+          <li>Calendar events and dress-code reading</li>
+          <li>Testing on real clothes and real photos, not just synthetic ones</li>
+        </ul>
+      </div>
+      <div class="lane"><h3>Later</h3>
+        <ul>
+          <li>Style evolution: noticing how your taste changes over months</li>
+          <li>"Make something like this photo, from my closet"</li>
+          <li>Capsule wardrobe: the fewest pieces that make the most outfits</li>
+          <li>iOS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="honest">
+      <h3>The fine print, in plain words</h3>
+      <ul>
+        <li>Try-on is a visual aid. It doesn't simulate fit, size or fabric.</li>
+        <li>Clothing recognition uses Google ML Kit's general labels, so it's sometimes unsure. That's why it asks you to confirm.</li>
+        <li>The on-phone realism engine is based on Local Dream, which is licensed for non-commercial use. Dapper is currently a personal project, and it isn't bundled with the app.</li>
+        <li>Every person and garment shown here is a synthetic image generated for testing. No real people's photos were used.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p><span class="mark sm">D</span> Dapper · a personal project · Android · v0.3 · Built with care, tested honestly.</p>
+</footer>
+
+<div class="lightbox" hidden><img alt=""><button aria-label="Close">✕</button></div>
+<script>
+  const lb = document.querySelector('.lightbox'), lbImg = lb.querySelector('img');
+  document.querySelectorAll('.shots img, .phone img, figure.wide img, .duo img').forEach(img => {
+    img.loading = 'lazy';
+    img.addEventListener('click', () => { lbImg.src = img.src; lbImg.alt = img.alt; lb.hidden = false; });
+  });
+  lb.addEventListener('click', () => { lb.hidden = true; });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.hidden = true; });
+</script>
+</body>
+</html>
