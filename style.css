@@ -170,3 +170,10 @@ footer p { display: flex; align-items: center; justify-content: center; gap: 10p
   .shots img { max-width: 44%; }
 }
 @media (max-width: 520px) { .pillars, .stack { grid-template-columns: 1fr; } }
+
+/* dark-mode accents must come last so they win over the base rules */
+@media (prefers-color-scheme: dark) {
+  .hero h1 em, .lane h3, .nav nav a:hover, main a { color: var(--accent); }
+  .btn.primary { color: #fff; }
+  .btn.ghost { border-color: var(--accent); color: var(--accent); }
+}
